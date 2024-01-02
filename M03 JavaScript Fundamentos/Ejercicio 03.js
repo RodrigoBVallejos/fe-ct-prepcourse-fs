@@ -72,8 +72,6 @@ function esImpar(num) {
    }
 
 
-
-
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    tienenMismaLongitud,

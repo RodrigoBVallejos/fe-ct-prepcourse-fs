@@ -22,7 +22,34 @@ function capToFront(string) {
    // Retornar el string.
    // [EJEMPLO]: soyHENRY ---> HENRYsoy
    // Tu código:
+
+  
+   
+   var mayusculas = split.string(filter((string) => string.length === toUpperCase)).join('');
+   var minusculas = split.string(filter((string) => string.length === toLowerCase)).join('');
+
+
+   return mayusculas + minusculas;
+
 }
+   /*
+   var mayusculas = string();
+   var minúsculas = string();
+
+
+   for ( i = 0; i < string.length; i ++){
+      if ( string[i] === string[i].toUpperCase()){
+         mayusculas += string[i];
+      }  else {
+      minúsculas += string[i];
+   }
+
+   return mayusculas + minúsculas;
+
+
+}
+}
+*/
 
 function asAmirror(frase) {
    // Recibes una frase. Tu tarea es retornar un nuevo string en el que el orden de las palabras sea el mismo.
