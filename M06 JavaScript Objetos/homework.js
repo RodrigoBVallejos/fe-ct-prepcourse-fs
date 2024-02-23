@@ -163,17 +163,24 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // Debes sumar los likes de todos los post y retornar el resultado.
    // Tu código:
 
-var totalLikes = 0;
-
-   for (let i = 0; i < objetoUsuario; i++){
-      var post = objetoUsuario[i]
-      
    
+  
 
+   var totalLikes = 0;
 
-return totalLikes;
+   if (objetoUsuario.hasOwnProperty('posts') && Array.isArray(objetoUsuario.posts)) {
 
-}
+      for (let i = 0; i < objetoUsuario.posts.length; i++) {
+       const post = objetoUsuario.posts[i];
+   
+         if (post.hasOwnProperty('likes') && typeof post.likes === 'number') {
+            totalLikes += post.likes;
+         }
+      }
+  }
+
+return totalLikes; 
+
 }
 
 function agregarMetodoCalculoDescuento(objetoProducto) {
@@ -188,6 +195,15 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
    // Precio final ---> 8
    // Tu código:
 
+
+   var objetoProducto = []
+   objetoProducto.push(calcularPrecioDescuento);
+
+   for (let i = 0; i < objetoProducto; i ++){
+   
+      //     var porcentajeDeDescuento = [];
+   
+   }
 
 
 

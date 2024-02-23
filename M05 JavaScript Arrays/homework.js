@@ -318,16 +318,15 @@ function continueStatement(num) {
    // Tu código:
 
 
-   var resultado = []
+   var resultado = [];
 
 
    for (let i = 0; i < 10; i ++){
     
-
-   if ( i === 4){
+   if ( i === 5){
      continue;
    }
-   num += 2
+   num += 2;
    resultado.push(num);
 }
 
